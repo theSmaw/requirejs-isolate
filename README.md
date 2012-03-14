@@ -1,3 +1,8 @@
+!! This project has moved to https://github.com/tnwinc/Isolate
+===============
+Use that one, it's much more better-er.
+
+
 require-isolate
 ===============
 
