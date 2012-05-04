@@ -26,6 +26,9 @@ define([],function(){
     },
     isArray: function(obj) {
       return Object.prototype.toString.call(obj) === '[object Array]';
+    },
+    isString: function(obj) {
+      return typeof(obj) === 'string';
     }
   }
   /* end underscore.js helpers */
@@ -72,6 +75,8 @@ define([],function(){
     } else if( _.isArray(orig) ){
       mock = [];
       _.each(orig, function(item,i){ mock[i] = mockThis(item,config); });
+    } else if (_.isString(orig)) {
+      mock = orig;
     }
     return mock;
   }
